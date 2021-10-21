@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status.tenno.dev' # used for Slack messages
+  url: 'https://cf-workers-status-page-production.mybitti.workers.dev/' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -18,7 +18,7 @@ monitors:
   - id: hub-page # unique identifier
     name: hub.tenno.dev
     description: 'hub.tenno.dev' # default=empty
-    url: 'https://hub.tenno.dev/' # URL to fetch
+    url: 'https://hub.tenno.dev' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
