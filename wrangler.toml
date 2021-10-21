@@ -1,6 +1,6 @@
 name = "cf-workers-status-page"
 workers_dev = true
-account_id = ""
+account_id = "29b1e5c03dadc6a8a6a30dc730b6ae05"
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
@@ -13,7 +13,7 @@ bucket = "out"
 entry-point = "./"
 
 # uncomment and adjust following if you are not using GitHub Actions
-#[env.production]
-#kv-namespaces = [{binding="KV_STATUS_PAGE", id="xxxx", preview_id=""}]
-#zone_id="xxx"
-#route="xxx"
+[env.production]
+kv-namespaces = [{binding="KV_STATUS_PAGE", id="9fedda624a2b4891ba7efddbf0e65a08", preview_id=""}]
+zone_id="beb3bcfb6eaa798a64b0c8abc214f372"
+route="https://status.tenno.dev/*"
