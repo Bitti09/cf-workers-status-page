@@ -15,19 +15,19 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: hub-page # unique identifier
+  - id: hub-page
     name: hub.tenno.dev
-    description: 'hub.tenno.dev' # default=empty
-    url: 'https://hub.tenno.dev' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
-
-  - id: api-tenno
-    name: api3.tenno.dev
-    description: 'api3.tenno.dev'
-    url: 'https://api3.tenno.dev'
+    description: 'hub.tenno.dev'
+    url: 'https://hub.tenno.dev'
     method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
+    expectStatus: 200  
+    followRedirect: true  
+    linkable: true 
+
+  - id: api-tenno 
+    name: api3.tenno.dev 
+    description: 'api3.tenno.dev' 
+    url: 'https://api3.tenno.dev' 
+    method: GET 
+    expectStatus: 200 
+    linkable: false 
